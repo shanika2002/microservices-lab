@@ -40,7 +40,7 @@ microservices-lab
 
 ---
 
-# 🚀 Running the Project
+## 🚀 Running the Project
 
 🔹 Step 1: Build JAR Files
 
@@ -90,22 +90,21 @@ You should see 4 running containers:
 - payment-service
 - api-gateway
 
-🌐 API Endpoints (Access via Gateway)
+## 🌐 API Endpoints (Access via Gateway)
 
 All requests must go through the API Gateway (Port 8080).
 
 🔹 GET Requests
-```
-http://localhost:8080/items
-```
-```
-http://localhost:8080/orders
-```
-```
-http://localhost:8080/payments
-```
 
-🔹 POST Requests (Optional Bonus)
+- http://localhost:8080/items
+
+- http://localhost:8080/orders
+
+- http://localhost:8080/payments
+
+
+🔹 POST Requests
+
 Add Item
 
 - POST http://localhost:8080/items
@@ -135,7 +134,7 @@ Process Payment
 }
 ```
 
-🐳 Docker Configuration
+## 🐳 Docker Configuration
 
 Each microservice contains a Dockerfile:
 ```
@@ -146,7 +145,7 @@ ENTRYPOINT ["java","-jar","app.jar"]
 ```
 Docker Compose creates a shared bridge network to allow container communication using service names.
 
-🧪 Testing
+## 🧪 Testing
 
 The application was tested using:
 ```
@@ -156,6 +155,6 @@ Docker CLI
 ```
 All services communicate successfully through the API Gateway.
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 **AMBEGODA A L A S K**
